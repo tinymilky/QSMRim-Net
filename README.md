@@ -19,13 +19,13 @@ We use a simple U-Net as backbone to show how our RSA block can be pugged into e
 
 ## QSMRim-Net Framwork
 
-<div align=center><img width=75% src="/figs/network_architecture.png"/></div>
+<div align=center><img width=90% src="/figs/network_architecture.png"/></div>
 
 Schematic of the proposed QSMRim-Net for paramagnetic rim lesion identification. (Top) The deep residual network takes in both QSM and FLAIR images to extract convolutional features. (Bottom) The QSM image and the lesion mask are used to extract radiomic features, followed by feature extraction of an MLP. A tensor concatenation operation is performed to fuse convolutional and radiomic features, and a DeepSMOTE layer is used to perform synthetic minority feature over-sampling during the training phase.
 
 ## Deep Synthetic Minority Oversampling TEchnique (DeepSMOTE)
 
-<div align=center><img width=75% src="/figs/smote_layer.png"/></div>
+<div align=center><img width=65% src="/figs/smote_layer.png"/></div>
 
 Schematic of the DeepSMOTE network layer. N is the number of samples in a training mini-batch, and n is the number of rim+ samples in the mini-batch. The input features go through an MLP for feature transformation, followed by selecting rim+ samples out from the mini-batch. Then the transformed rim+ features are used to generate the similarity using Euclidean distance followed by latent feature interpolation and concatenation of the original feature and the oversampled feature, resulting in total N+2n samples in the output of DeepSMOTE.
 
