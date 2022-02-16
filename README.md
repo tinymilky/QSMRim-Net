@@ -1,9 +1,9 @@
 # QSMRim-Net
  
-# [QSMRim-Net: Imbalance-Aware Learning for Identification of Chronic Active Multiple Sclerosis Lesions on Quantitative Susceptibility Maps](https://www.biorxiv.org/content/10.1101/2022.01.31.478482v1?rss=1) (bioRxiv preprint, submitted to NeuroImage: Clinical)
+# [QSMRim-Net: Imbalance-Aware Learning for Identification of Chronic Active Multiple Sclerosis Lesions on Quantitative Susceptibility Maps](https://www.biorxiv.org/content/10.1101/2022.01.31.478482v1?rss=1) 
 ![Pytorch](https://img.shields.io/badge/Implemented%20in-Pytorch-red.svg) <br>
 
-[Hang Zhang](https://tinymilky.github.io/), Thanh D. Nguyen, Jinwei Zhang, Melanie Marcille, Pascal Spincemaille, Yi Wang, Susan A. Gauthier, [Elizabeth M. Sweeney](https://emsweene.github.io/).
+[Hang Zhang](https://tinymilky.github.io/), Thanh D. Nguyen, Jinwei Zhang, Melanie Marcille, Pascal Spincemaille, Yi Wang, Susan A. Gauthier, [Elizabeth M. Sweeney](https://emsweene.github.io/). (bioRxiv preprint, submitted to NeuroImage: Clinical)
 
 ## Background
 
