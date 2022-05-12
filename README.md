@@ -1,9 +1,9 @@
 # QSMRim-Net
  
-# [QSMRim-Net: Imbalance-Aware Learning for Identification of Chronic Active Multiple Sclerosis Lesions on Quantitative Susceptibility Maps](https://www.biorxiv.org/content/10.1101/2022.01.31.478482v1?rss=1) 
+# [QSMRim-Net: Imbalance-Aware Learning for Identification of Chronic Active Multiple Sclerosis Lesions on Quantitative Susceptibility Maps](https://www.sciencedirect.com/science/article/pii/S2213158222000444?via%3Dihub) 
 ![Pytorch](https://img.shields.io/badge/Implemented%20in-Pytorch-red.svg) <br>
 
-[Hang Zhang](https://tinymilky.github.io/), Thanh D. Nguyen, Jinwei Zhang, Melanie Marcille, Pascal Spincemaille, Yi Wang, Susan A. Gauthier, [Elizabeth M. Sweeney](https://emsweene.github.io/). (bioRxiv preprint, submitted to NeuroImage: Clinical)
+[Hang Zhang](https://tinymilky.github.io/), Thanh D. Nguyen, Jinwei Zhang, Melanie Marcille, Pascal Spincemaille, Yi Wang, Susan A. Gauthier, [Elizabeth M. Sweeney](https://emsweene.github.io/). (NeuroImage: Clinical, 2022)
 
 ## Background
 
@@ -12,10 +12,10 @@ Chronic active multiple sclerosis (MS) lesions are characterized by a paramagnet
 ## Usage
 
 The dataset used to verify the performance of the proposed method is unvailable per the policy of [Weill Cornell Medicine](https://weill.cornell.edu/). 
-However, algorithms mentioned in the [QSMRim-Net paper](https://www.biorxiv.org/content/10.1101/2022.01.31.478482v1?rss=1) are available in this repositorty.
+However, algorithms mentioned in the [QSMRim-Net paper](https://www.sciencedirect.com/science/article/pii/S2213158222000444?via%3Dihub) are available in this repositorty.
 
 We use a simple U-Net as backbone to show how our RSA block can be pugged into existing network. <br>
-`./src/QSMRim-Net.py` contains QSMRim-Net architecture with detailed modules import from `./src/backbones/resnet.py`. The configurations for extracting radiomic features using [PyRadiomics](https://pyradiomics.readthedocs.io/) are listed in `radiomics/config.yaml`.
+`./src/QSMRim-Net.py` contains QSMRim-Net architecture with detailed modules import from `./src/backbones/resnet.py`. The configurations for extracting radiomic features using [PyRadiomics](https://pyradiomics.readthedocs.io/) are listed in `radiomics/config.yaml`. A pretrained model weight file can be accessed [here](https://drive.google.com/file/d/1Q6M81-sK5srKTFgDOoYbwVO_N8PCMwc8/view?usp=sharing) (Please note that the outcome may vary as your testing data can be different from our training data).
 
 ## QSMRim-Net Framwork
 
@@ -33,21 +33,19 @@ Schematic of the DeepSMOTE network layer. N is the number of samples in a traini
 
 <div align=center><img width=75% src="/figs/rim_example.png"/></div>
 
-Example of MS lesions on an axial slice of the QSM (left) and corresponding axial slice of the T2-FLAIR (right). The digit 1 marked with red indicates a rim+ lesion and the digit 2 marked with green indicates a rim- lesion. (More details in the [paper](https://www.biorxiv.org/content/10.1101/2022.01.31.478482v1?rss=1))
+Example of MS lesions on an axial slice of the QSM (left) and corresponding axial slice of the T2-FLAIR (right). The digit 1 marked with red indicates a rim+ lesion and the digit 2 marked with green indicates a rim- lesion. (More details in the [paper](https://www.sciencedirect.com/science/article/pii/S2213158222000444?via%3Dihub))
 
 ## Citation
-If you are inspired by [QSMRim-Net](https://www.biorxiv.org/content/10.1101/2022.01.31.478482v1?rss=1) or use our [code](https://github.com/tinymilky/QSMRim-Net), please cite:
+If you are inspired by [QSMRim-Net](https://www.sciencedirect.com/science/article/pii/S2213158222000444?via%3Dihub) or use our [code](https://github.com/tinymilky/QSMRim-Net), please cite:
 ```
-@article {Zhang2022.01.31.478482,
-	author = {Zhang, Hang and Nguyen, Thanh D. and Zhang, Jinwei and Marcille, Melanie and Spincemaille, Pascal and Wang, Yi and Gauthier, Susan A. and Sweeney, Elizabeth M.},
-	title = {QSMRim-Net: Imbalance-Aware Learning for Identification of Chronic Active Multiple Sclerosis Lesions on Quantitative Susceptibility Maps},
-	elocation-id = {2022.01.31.478482},
-	year = {2022},
-	doi = {10.1101/2022.01.31.478482},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2022/02/01/2022.01.31.478482},
-	eprint = {https://www.biorxiv.org/content/early/2022/02/01/2022.01.31.478482.full.pdf},
-	journal = {bioRxiv}
+@article{zhang2022qsmrim,
+  title={QSMRim-Net: Imbalance-aware learning for identification of chronic active multiple sclerosis lesions on quantitative susceptibility maps},
+  author={Zhang, Hang and Nguyen, Thanh D and Zhang, Jinwei and Marcille, Melanie and Spincemaille, Pascal and Wang, Yi and Gauthier, Susan A and Sweeney, Elizabeth M},
+  journal={NeuroImage: Clinical},
+  volume={34},
+  pages={102979},
+  year={2022},
+  publisher={Elsevier}
 }
 
 ```
